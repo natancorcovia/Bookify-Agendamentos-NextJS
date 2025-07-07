@@ -36,7 +36,10 @@ export default function Home() {
         </div>
 
         {/* agendamentos */}
-        <Card className="mt-6">
+        <h2 className="mb-3 mt-6 text-sm font-bold uppercase text-gray-400">
+          agendamentos
+        </h2>
+        <Card>
           <CardContent className="flex justify-between p-0">
             {/* esquerda */}
             <div className="flex flex-col gap-2 py-5 pl-5">
