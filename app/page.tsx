@@ -13,6 +13,12 @@ import BarbershopItem from "./_components/BarbershopItem"
 export default async function Home() {
   // Chama meu banco de dados
   const barbershop = await db.barbershop.findMany({})
+  const popularBarbershops = await db.barbershop.findMany({
+    orderBy: {
+      name: "desc",
+    },
+  })
+
   return (
     <div>
       <Header />
@@ -26,6 +32,39 @@ export default async function Home() {
           <Input placeholder="Faça sua busca..." />
           <Button>
             <SearchIcon />
+          </Button>
+        </div>
+
+        {/* busca rapida */}
+        <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+          <Button variant="secondary" className="gap-2">
+            <Image alt="cabelo" src="/cabelo.svg" width={16} height={16} />
+            Cabelo
+          </Button>
+
+          <Button variant="secondary" className="gap-2">
+            <Image alt="barba" src="/barba.svg" width={16} height={16} />
+            Barba
+          </Button>
+
+          <Button variant="secondary" className="gap-2">
+            <Image
+              alt="acabamento"
+              src="/acabamento.svg"
+              width={16}
+              height={16}
+            />
+            Acabamento
+          </Button>
+
+          <Button variant="secondary" className="gap-2">
+            <Image alt="barba" src="/barba.svg" width={16} height={16} />
+            Barba
+          </Button>
+
+          <Button variant="secondary" className="gap-2">
+            <Image alt="barba" src="/barba.svg" width={16} height={16} />
+            Barba
           </Button>
         </div>
 
@@ -79,7 +118,26 @@ export default async function Home() {
             <BarbershopItem key={barbershop.id} barbershop={barbershop} />
           ))}
         </div>
+
+        {/* populares */}
+        <h2 className="mb-3 mt-6 text-sm font-bold uppercase text-gray-400">
+          populares
+        </h2>
+        <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
+          {popularBarbershops.map((barbershop) => (
+            <BarbershopItem key={barbershop.id} barbershop={barbershop} />
+          ))}
+        </div>
       </div>
+      <footer>
+        <Card>
+          <CardContent className="px-5 py-6">
+            <p className="text-sm text-gray-400">
+              © 2023 Copyright <span className="font-bold">FSW Barber</span>
+            </p>
+          </CardContent>
+        </Card>
+      </footer>
     </div>
   )
 }
