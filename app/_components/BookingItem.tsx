@@ -3,6 +3,7 @@ import { Avatar } from "./ui/avatar"
 import { AvatarImage } from "./ui/avatar"
 import { Card, CardContent } from "./ui/card"
 
+// TODO: receber agendamento como prop
 const BookingItem = () => {
   return (
     <>
