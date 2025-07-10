@@ -21,11 +21,12 @@ const ServiceItem = ({ service }: BarbershopPageProps) => {
           />
         </div>
         {/* direita */}
-        <div className="space-y-2">
+        <div className="w-full space-y-2">
           <h3 className="text-sm font-semibold">{service.name}</h3>
           <p className="text-sm text-gray-400">{service.description}</p>
+          {/* preço */}
           <div className="flex items-center justify-between">
-            <p>
+            <p className="text-sm font-bold text-primary">
               {Intl.NumberFormat("pt-BR", {
                 style: "currency",
                 currency: "BRL",
