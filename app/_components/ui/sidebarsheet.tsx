@@ -1,10 +1,18 @@
 import Image from "next/image"
 import { Button } from "./button"
-import { CalendarIcon, HomeIcon, LogOutIcon } from "lucide-react"
+import { CalendarIcon, HomeIcon, LogInIcon, LogOutIcon } from "lucide-react"
 import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./sheet"
 import { QuickSearchOptions } from "@/app/_constants/search"
-import { Avatar, AvatarImage } from "./avatar"
+// import { Avatar, AvatarImage } from "./avatar"
 import Link from "next/link"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./dialog"
 
 const SideBarSheet = () => {
   return (
@@ -13,15 +21,41 @@ const SideBarSheet = () => {
         <SheetTitle className="text-left">Menu</SheetTitle>
       </SheetHeader>
 
-      <div className="flex items-center gap-3 border-b border-solid py-5">
-        <Avatar>
+      <div className="flex items-center justify-between gap-3 border-b border-solid py-5">
+        <h2 className="font-bold">Olá, faça seu login</h2>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button size="icon">
+              <LogInIcon />
+            </Button>
+          </DialogTrigger>
+
+          <DialogContent className="w-4/5 rounded-lg sm:max-w-[425px]">
+            <DialogHeader>
+              <DialogTitle>Faça login na plataforma</DialogTitle>
+              <DialogDescription>
+                Conecte-se usando sua conta no Google.
+              </DialogDescription>
+            </DialogHeader>
+            <Button variant="outline" className="gap-1">
+              <Image
+                alt="Faça login com o Google."
+                src="/google.svg"
+                width={18}
+                height={18}
+              />
+              Google
+            </Button>
+          </DialogContent>
+        </Dialog>
+        {/* <Avatar>
           <AvatarImage src="https://images.unsplash.com/photo-1728577740843-5f29c7586afe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D" />
         </Avatar>
 
         <div>
           <p className="font-bold">Natan Silva</p>
           <p className="text-sm">natan@silva.com.br</p>
-        </div>
+        </div> */}
       </div>
 
       {/* inicio e agendamento */}
