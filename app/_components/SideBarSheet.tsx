@@ -26,7 +26,7 @@ const SideBarSheet = () => {
       <SheetHeader>
         <SheetTitle className="text-left">Menu</SheetTitle>
       </SheetHeader>
-
+      {/* ola do usuario  */}
       <div className="flex items-center justify-between gap-3 border-b border-solid py-5">
         {data?.user ? (
           <div className="flex items-center gap-2">
@@ -92,21 +92,21 @@ const SideBarSheet = () => {
         </Button>
       </div>
       {/* botoes serviços */}
-      <div className="flex flex-col gap-1 border-b border-solid py-5">
+      <div className="flex flex-col gap-2 border-b border-solid py-5">
         {QuickSearchOptions.map((option) => (
-          <Button
-            key={option.title}
-            className="justify-start gap-2"
-            variant="ghost"
-          >
-            <Image
-              src={option.imgUrl}
-              alt={option.title}
-              width={18}
-              height={18}
-            />
-            {option.title}
-          </Button>
+          <SheetClose key={option.title} asChild>
+            <Button className="justify-start gap-2" variant="ghost" asChild>
+              <Link href={`/barbershops?service=${option.title}`}>
+                <Image
+                  alt={option.title}
+                  src={option.imgUrl}
+                  height={18}
+                  width={18}
+                />
+                {option.title}
+              </Link>
+            </Button>
+          </SheetClose>
         ))}
       </div>
       <div className="flex flex-col gap-1 py-5">
