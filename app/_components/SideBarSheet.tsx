@@ -1,11 +1,11 @@
 "use client"
 
 import Image from "next/image"
-import { Button } from "./button"
+import { Button } from "./ui/button"
 import { CalendarIcon, HomeIcon, LogInIcon, LogOutIcon } from "lucide-react"
-import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./sheet"
+import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet"
 import { QuickSearchOptions } from "@/app/_constants/search"
-import { Avatar, AvatarImage } from "./avatar"
+import { Avatar, AvatarImage } from "./ui/avatar"
 import Link from "next/link"
 import {
   Dialog,
@@ -14,7 +14,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./dialog"
+} from "./ui/dialog"
 import { signIn, signOut, useSession } from "next-auth/react"
 
 const SideBarSheet = () => {
