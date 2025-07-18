@@ -18,7 +18,7 @@ import { format, set } from "date-fns"
 import { createBooking } from "../_actions/createBooking"
 import { useSession } from "next-auth/react"
 import { toast } from "sonner"
-import { getBookings } from "../_actions/getBokking"
+import { getBookings } from "../_actions/getBooking"
 import { Dialog, DialogContent } from "./ui/dialog"
 import SignInDialog from "./SignInDialog"
 
