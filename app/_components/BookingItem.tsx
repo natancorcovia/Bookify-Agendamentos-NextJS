@@ -80,7 +80,9 @@ const BookingItem = ({ booking }: BookingItemProps) => {
                 >
                   {isBookingConfirmed ? "Confirmado" : "Finalizado"}
                 </Badge>
-                <h3 className="font-semibold">Corte de cabelo</h3>
+                <h3 className="text-left font-semibold">
+                  {booking.service.name}
+                </h3>
 
                 <div className="flex items-center gap-2">
                   <Avatar className="h-6 w-6">

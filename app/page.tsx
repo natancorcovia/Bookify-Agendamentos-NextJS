@@ -100,14 +100,22 @@ export default async function Home() {
         </div>
 
         {/* agendamentos */}
-        <h2 className="mb-3 mt-6 text-sm font-bold uppercase text-gray-400">
-          agendamentos
-        </h2>
-        <div className="flex gap-3 overflow-auto [&::-webkit-scrollbar]:hidden">
-          {confirmedBookings.map((bookings) => (
-            <BookingItem key={bookings.id} booking={bookings} />
-          ))}
-        </div>
+        {confirmedBookings.length > 0 && (
+          <>
+            <h2 className="mb-3 mt-6 text-sm font-bold uppercase text-gray-400">
+              agendamentos
+            </h2>
+
+            <div className="flex gap-3 overflow-auto [&::-webkit-scrollbar]:hidden">
+              {confirmedBookings.map((bookings) => (
+                <BookingItem
+                  key={bookings.id}
+                  booking={JSON.parse(JSON.stringify(bookings))}
+                />
+              ))}
+            </div>
+          </>
+        )}
 
         {/* Recomendados */}
         <h2 className="mb-3 mt-6 text-sm font-bold uppercase text-gray-400">
