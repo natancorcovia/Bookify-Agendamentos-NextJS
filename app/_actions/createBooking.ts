@@ -16,6 +16,7 @@ export const createBooking = async (params: CreateBookingParams) => {
     throw new Error("Usuário não autenticado.")
   }
   await db.booking.create({
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     data: { ...params, userId: (user.user as any).id },
   })
   revalidatePath("/barbershops/[id]")

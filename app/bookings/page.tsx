@@ -12,6 +12,7 @@ const Bookings = async () => {
   }
   const confirmedBookings = await db.booking.findMany({
     where: {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       userId: (session.user as any).id,
       date: {
         gte: new Date(),
@@ -31,6 +32,7 @@ const Bookings = async () => {
 
   const concludedBookings = await db.booking.findMany({
     where: {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       userId: (session.user as any).id,
       date: {
         lt: new Date(),
