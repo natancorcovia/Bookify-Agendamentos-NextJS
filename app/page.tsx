@@ -72,7 +72,12 @@ export default async function Home() {
 
         {/* banner */}
         <div className="flex gap-4 overflow-auto whitespace-nowrap px-4 [&::-webkit-scrollbar]:hidden">
-          {["/banner-01.jpeg", "/banner-02.jpg"].map((src, index) => (
+          {[
+            "/banner-01.jpeg",
+            "/banner-02.jpg",
+            "/banner-01.jpeg",
+            "/banner-02.jpg",
+          ].map((src, index) => (
             <div
               key={index}
               className="relative mt-6 h-[150px] min-w-[90%] flex-shrink-0"
