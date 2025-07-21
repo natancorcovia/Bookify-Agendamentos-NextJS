@@ -17,11 +17,10 @@ async function seedDatabase() {
       "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6H2BUTLGm5UutCwZ6JksPVI9ai7TH0n3cNDE8",
       "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6GnGyDRvbHfBlK7oJjPGvS0438cTQywhFdqaX",
       "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6VlXj3tdjUbfoEu6SXY8AB4Tn3vw50NVs9z2W",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy61rWyUpNcW6If3xmPR8ln4oSewzYtJO2rHFNq",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6fasZombVuPG3B7LvqHmpyawQYWNxZ0ADt85R",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy60K9n6IXLLuafPXTti2Q9yw5kpqvSmJVbCFYZ",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6I2rbs0ethXxigdzyRp69bNUVW2eqS4Jl7TBn",
       "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6g1eI3oQSEmRVlXbiwU7h5PnDtLeqJC4QITuj",
       "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6kSC4nCHpduvY0nerlzXwOtg1xK8LADbyUEVR",
-      "https://utfs.io/f/45331760-899c-4b4b-910e-e00babb6ed81-16q.png",
     ]
 
     const creativeNames = [

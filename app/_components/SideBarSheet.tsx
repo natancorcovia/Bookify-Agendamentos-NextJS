@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+// import Image from "next/image"
 import { Button } from "./ui/button"
 import { CalendarIcon, HomeIcon, LogInIcon, LogOutIcon } from "lucide-react"
 import { SheetClose, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet"
@@ -73,12 +73,12 @@ const SideBarSheet = () => {
           <SheetClose key={option.title} asChild>
             <Button className="justify-start gap-2" variant="ghost" asChild>
               <Link href={`/barbershops?service=${option.title}`}>
-                <Image
+                {/* <Image
                   alt={option.title}
                   src={option.imgUrl}
                   height={18}
                   width={18}
-                />
+                /> */}
                 {option.title}
               </Link>
             </Button>

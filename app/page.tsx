@@ -44,6 +44,7 @@ export default async function Home() {
         </p>
 
         {/* busca */}
+
         <div className="mt-6">
           <Search />
         </div>
@@ -58,12 +59,12 @@ export default async function Home() {
               asChild
             >
               <Link href={`/barbershops?service=${option.title}`}>
-                <Image
+                {/* <Image
                   src={option.imgUrl}
                   width={16}
                   height={16}
                   alt={option.title}
-                />
+                /> */}
                 {option.title}
               </Link>
             </Button>
