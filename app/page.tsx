@@ -71,13 +71,20 @@ export default async function Home() {
         </div>
 
         {/* banner */}
-        <div className="relative mt-6 h-[150px] w-full">
-          <Image
-            alt="Agende com os melhores!"
-            src="/banner-01.png"
-            fill
-            className="rounded-xl object-cover"
-          />
+        <div className="flex gap-4 overflow-auto whitespace-nowrap px-4 [&::-webkit-scrollbar]:hidden">
+          {["/banner-01.jpeg", "/banner-02.jpg"].map((src, index) => (
+            <div
+              key={index}
+              className="relative mt-6 h-[150px] min-w-[90%] flex-shrink-0"
+            >
+              <Image
+                alt="Promoções da semana!"
+                src={src}
+                fill
+                className="rounded-xl object-cover"
+              />
+            </div>
+          ))}
         </div>
 
         {/* agendamentos */}
