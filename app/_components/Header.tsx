@@ -1,4 +1,4 @@
-// import Image from "next/image"
+import Image from "next/image"
 import { Card, CardContent } from "./ui/card"
 import SideBarSheet from "./SideBarSheet"
 import { Sheet, SheetTrigger } from "./ui/sheet"
@@ -11,12 +11,7 @@ const Header = () => {
     <Card>
       <CardContent className="flex flex-row items-center justify-between p-5">
         <Link href="/">
-          {/* <Image
-            alt="Logo da página"
-            src="/logo01.png"
-            height={18}
-            width={120}
-          /> */}
+          <Image alt="Logo da página" src="/logo.png" height={18} width={120} />
         </Link>
 
         <Sheet>
