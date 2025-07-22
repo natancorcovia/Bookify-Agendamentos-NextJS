@@ -377,7 +377,7 @@ async function seedDatabase() {
           "Desenhos maiores e mais complexos, com múltiplas sessões se necessário.",
         price: 800.0,
         imageUrl:
-          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6HPeyf4Gm5UutCwZ6JksPVI9ai7TH0n3cNDE8",
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6Ifn84xethXxigdzyRp69bNUVW2eqS4Jl7TBn",
       },
       {
         name: "Cobertura (Cover-up)",
@@ -393,7 +393,7 @@ async function seedDatabase() {
           "Refazimento de linhas ou preenchimento de cor em tatuagens desbotadas.",
         price: 150.0,
         imageUrl:
-          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6pDcoYIuglYuwFZiaDoRUVb8KPxOeBr73XjIM",
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6PEOztB7q5ZJBtDQTMYHdaEvpNsKzbFly9c6S",
       },
       {
         name: "Sessão por Hora",
