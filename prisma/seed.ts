@@ -11,16 +11,16 @@ async function seedDatabase() {
     await prisma.barbershop.deleteMany()
 
     const images = [
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6HNUfsSGm5UutCwZ6JksPVI9ai7TH0n3cNDE8",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy657pbndtE4OcYIyQijKmLSWrRfJX9oHkFZu8l",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6vg4HPLMSHNxDAGtimhT67Xub1M3pJ8Vf2IZR",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6H2BUTLGm5UutCwZ6JksPVI9ai7TH0n3cNDE8",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6GnGyDRvbHfBlK7oJjPGvS0438cTQywhFdqaX",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6VlXj3tdjUbfoEu6SXY8AB4Tn3vw50NVs9z2W",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy60K9n6IXLLuafPXTti2Q9yw5kpqvSmJVbCFYZ",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6I2rbs0ethXxigdzyRp69bNUVW2eqS4Jl7TBn",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6g1eI3oQSEmRVlXbiwU7h5PnDtLeqJC4QITuj",
-      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6kSC4nCHpduvY0nerlzXwOtg1xK8LADbyUEVR",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6TR05wsEDMql9W0KacuNCEB1Z8VyeJ7L2ztrU",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6VVR3VfdjUbfoEu6SXY8AB4Tn3vw50NVs9z2W",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6hnzYIZirM9Pzux6kQCU7iYGftSay8v1cFHJN",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy680TLGry3B59213OSghAMJjtXfKbPcVD7dzqx",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy68NLMaX3B59213OSghAMJjtXfKbPcVD7dzqxZ",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy60eebI2LLuafPXTti2Q9yw5kpqvSmJVbCFYZB",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6oL64oN8GyxTZXEMj6en27tzqwbu5BmCpdkrR",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6rL14TAFCfmni1Ha2Z5XBzV6DerUqRwO4dJYl",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6Cuhs61kycoq4aBiKAYjEWZhvT1NL0rVwkGdg",
+      "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6L9rwON9s6r9RLCk12IuaNtjwpVKThXFZozMy",
     ]
 
     const creativeNames = [
