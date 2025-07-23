@@ -410,42 +410,48 @@ async function seedDatabase() {
         name: "Lavagem Completa Externa",
         description: "Lavagem detalhada da lataria, rodas e vidros do veículo.",
         price: 80.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6kvmDKSaHpduvY0nerlzXwOtg1xK8LADbyUEV",
       },
       {
         name: "Lavagem Interna",
         description:
           "Limpeza completa do interior, incluindo aspirador, painéis e vidros internos.",
         price: 100.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6Qn7qOLD5Yw19Sx7hoVTltUW8ZIMAzJKH2dGu",
       },
       {
         name: "Higienização de Estofados",
         description:
           "Limpeza profunda dos bancos com produtos específicos para remoção de manchas e odores.",
         price: 150.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6r5GBIoFCfmni1Ha2Z5XBzV6DerUqRwO4dJYl",
       },
       {
         name: "Polimento da Lataria",
         description:
           "Restauração do brilho original com polimento profissional e proteção.",
         price: 250.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6rPYCyDFCfmni1Ha2Z5XBzV6DerUqRwO4dJYl",
       },
       {
         name: "Vitrificação",
         description:
           "Aplicação de película protetora para maior durabilidade e brilho da pintura.",
         price: 500.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6uRZC7nABCXDTcaQLVwf17Ub6mRyqnt2S8IsW",
       },
       {
         name: "Lavagem de Motor",
         description:
           "Limpeza cuidadosa do compartimento do motor para manutenção e estética.",
         price: 120.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6TDkxbRIEDMql9W0KacuNCEB1Z8VyeJ7L2ztr",
       },
     ]
 
@@ -455,39 +461,45 @@ async function seedDatabase() {
         description:
           "Aplicação de fios individuais para um efeito natural e elegante.",
         price: 150.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6DfO7Nl5rQPBt2EJg3sFCwLN5SeXb9o8hR6U7",
       },
       {
         name: "Alongamento de Cílios Volume Russo",
         description:
           "Aplicação de múltiplos fios finos para um efeito mais cheio e volumoso.",
         price: 250.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6o94BUh8GyxTZXEMj6en27tzqwbu5BmCpdkrR",
       },
       {
         name: "Reparo de Cílios",
         description: "Correção e complementação de cílios que perderam fios.",
         price: 120.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6UCPmeNVfGuoVi7LCRqENeBIP6DJmTFv24KQM",
       },
       {
         name: "Remoção de Alongamento",
         description:
           "Retirada cuidadosa dos cílios aplicados para preservar os naturais.",
         price: 80.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6kytxaNHpduvY0nerlzXwOtg1xK8LADbyUEVR",
       },
       {
         name: "Design de Sobrancelhas",
         description: "Modelagem personalizada para harmonizar o rosto.",
         price: 100.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6q2r6NtATGPZJO7Qg1dvlzo5C2k3hauVBnMAD",
       },
       {
         name: "Tintura de Cílios e Sobrancelhas",
         description: "Coloração para realçar o olhar de forma natural.",
         price: 90.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6d4lGWvm8G4BdQZ6hkJprbzlUHOMv3FDwLsiq",
       },
     ]
 
@@ -497,41 +509,47 @@ async function seedDatabase() {
         description:
           "Banho com produtos neutros e água morna para o conforto do pet.",
         price: 40.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6XdUcz0oAtQLwTO8DWBub0Y2N1SFJIG56gr7s",
       },
       {
         name: "Tosa Higiênica",
         description:
           "Higienização das áreas íntimas para manter o pet limpo e saudável.",
         price: 35.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy67F3mC2pO1b9ZoMj0frNv8Cmay7AW4xp3Dqnw",
       },
       {
         name: "Tosa Completa",
         description: "Corte completo conforme a raça ou preferência do tutor.",
         price: 70.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6a3e7LtW9CfdqT81vwXknDZWPsigV4RbQxGOI",
       },
       {
         name: "Corte de Unhas",
         description:
           "Aparação cuidadosa das unhas para evitar ferimentos e desconfortos.",
         price: 20.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6nd4iymzUILFvtpmMNJ6G3KPX2VEklaRcTQSz",
       },
       {
         name: "Limpeza de Ouvidos",
         description:
           "Higienização das orelhas com produtos específicos e seguros.",
         price: 25.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6eYK7nSJUZNihFMAK70kzj6Lfng9tvJWPmxbc",
       },
       {
         name: "Hidratação de Pelagem",
         description:
           "Tratamento especial para manter os pelos macios e saudáveis.",
         price: 55.0,
-        imageUrl: "",
+        imageUrl:
+          "https://yxtdichn8p.ufs.sh/f/cBFDB4RsNKy6JQuEWj7Rveb48kB7OLly136q2EYxsfXwoQdN",
       },
     ]
 

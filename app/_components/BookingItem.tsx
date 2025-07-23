@@ -112,7 +112,7 @@ const BookingItem = ({ booking }: BookingItemProps) => {
             </CardContent>
           </Card>
         </SheetTrigger>
-        <SheetContent className="w-[85%] rounded-xl">
+        <SheetContent className="w-[85%] overflow-y-auto rounded-xl [&::-webkit-scrollbar]:hidden">
           <SheetHeader>
             <SheetTitle className="text-left">
               Informações da Reserva
