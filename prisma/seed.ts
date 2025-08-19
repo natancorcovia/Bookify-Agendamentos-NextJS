@@ -5,7 +5,6 @@ const prisma = new PrismaClient()
 
 async function seedDatabase() {
   try {
-    // Apaga dados antigos para evitar duplicação
     await prisma.booking.deleteMany()
     await prisma.barbershopService.deleteMany()
     await prisma.barbershop.deleteMany()
