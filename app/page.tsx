@@ -29,28 +29,53 @@ export default async function Home() {
     <div>
       <Header />
       <div className="p-5">
-        {/* texto */}
-        <h2 className="text-xl font-bold">
-          Olá, {session?.user ? session.user.name : "seja bem vindo"}!
-        </h2>
-        <p>
-          <span className="capitalize">
-            {format(new Date(), "EEEE, dd", { locale: ptBR })}
-          </span>
-          <span>&nbsp;de&nbsp;</span>
-          <span className="capitalize">
-            {format(new Date(), "MMMM", { locale: ptBR })}
-          </span>
-        </p>
+        <div className="lg:flex lg:items-center">
+          <div className="lg:w-1/2">
+            {/* texto */}
+            <h2 className="text-xl font-bold">
+              Olá, {session?.user ? session.user.name : "seja bem vindo"}!
+            </h2>
 
-        {/* busca */}
+            <p>
+              <span className="capitalize">
+                {format(new Date(), "EEEE, dd", { locale: ptBR })}
+              </span>
+              <span>&nbsp;de&nbsp;</span>
+              <span className="capitalize">
+                {format(new Date(), "MMMM", { locale: ptBR })}
+              </span>
+            </p>
 
-        <div className="mt-6">
-          <Search />
+            {/* busca */}
+            <div className="mt-6 lg:w-full">
+              <Search />
+            </div>
+          </div>
+
+          <div className="ml-2 hidden gap-4 overflow-auto whitespace-nowrap px-4 lg:flex lg:w-1/2 [&::-webkit-scrollbar]:hidden">
+            {[
+              "/banner-01.jpeg",
+              "/banner-02.jpg",
+              "/banner-01.jpeg",
+              "/banner-02.jpg",
+            ].map((src, index) => (
+              <div
+                key={index}
+                className="relative mt-6 h-[150px] min-w-[90%] flex-shrink-0"
+              >
+                <Image
+                  alt="Promoções da semana!"
+                  src={src}
+                  fill
+                  className="rounded-xl object-cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* busca rapida */}
-        <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+        <div className="mt-6 flex gap-3 overflow-x-scroll lg:hidden [&::-webkit-scrollbar]:hidden">
           {QuickSearchOptions.map((option) => (
             <Button
               className="gap-2"
@@ -72,7 +97,7 @@ export default async function Home() {
         </div>
 
         {/* banner */}
-        <div className="flex gap-4 overflow-auto whitespace-nowrap px-4 [&::-webkit-scrollbar]:hidden">
+        <div className="flex gap-4 overflow-auto whitespace-nowrap px-4 lg:hidden [&::-webkit-scrollbar]:hidden">
           {[
             "/banner-01.jpeg",
             "/banner-02.jpg",
