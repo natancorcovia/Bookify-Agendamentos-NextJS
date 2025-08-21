@@ -10,7 +10,7 @@ Com o Bookify, clientes podem escolher um serviço, visualizar horários dispon�
 - 🛍️ Listagem de serviços com preços e descrições
 - 📍 Detalhes do estabelecimento (nome, endereço, contato)
 - 🔒 Autenticação com Google (via Auth.js)
-- 📱 Interface responsiva e moderna (responsividade em desenvolvimento, apenas mobile no momento)
+- 📱 Interface responsiva e moderna
 - 🛠️ Painel administrativo (em desenvolvimento)
 
 ## 🧰 Tecnologias Utilizadas
